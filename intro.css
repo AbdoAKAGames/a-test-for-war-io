@@ -1,0 +1,271 @@
+.comp_name, .word{
+    display: flex;
+    justify-content: center;
+}
+.comp_name{
+    animation: cname 2s linear 0s forwards alternate;
+    opacity: 0;
+}
+.word{
+    animation: word 2s linear 2s forwards alternate;
+    opacity: 0;
+}
+.first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    color: #fff;
+    font-family: system-ui;
+    animation: first 2s linear 5.8s forwards alternate;
+}
+.container1{
+    background: linear-gradient(blue, yellowgreen, green, yellow);
+    padding: 20px;
+    animation: container1 2s linear 4s forwards alternate;
+    font-size: 72px;
+}
+@keyframes cname {
+    from{color: #fff;opacity: 0;}
+    to{color: #f00;opacity: 1;}
+}
+@keyframes word {
+    from{color: #fff;opacity: 0;}
+    to{color: #00fc65;opacity: 1;}
+}
+@keyframes container1 {
+    from{padding: 20px;font-size: 72px;opacity: 1;}
+    to{padding: 150px;font-size: 120px;opacity: 0;}
+}
+@keyframes first {
+    from{opacity: 1;}
+    to{opacity: 0;}
+}
+.second{
+    width: 0;
+    height: 0;
+    color: #fff;
+    font-family: system-ui;
+    animation: second 2s linear 7.8s forwards alternate;
+    font-size: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.all{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: all 2s linear 11.8s forwards alternate;
+    background: #000;
+}
+@keyframes second {
+    from{opacity: 0;width: 0;height: 0;font-size: 0;}
+    to{opacity: 1;width: 100%;height: 100%;font-size: 90px;}
+}
+@keyframes all {
+    from{opacity: 1;width: 100%;height: 100%;font-size: 90px;}
+    to{opacity: 0;width: 0;height: 0;font-size: 0;}
+}
+#signup-app{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://i.ibb.co/wCF5Z41/signup-background.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    opacity: 0;
+    animation: app 2s linear 13.8s forwards alternate;
+}
+@keyframes app {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+.signup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.create_account{
+    width: 100%;
+    text-align: center;
+}
+.create_text{
+    display: flex;
+    justify-content: center;
+}
+.create_text .text{
+    color: #00ff;
+    font-family: system-ui;
+    text-align: center;
+    background: linear-gradient(#f89500, #ffea00);
+    padding: 15px;
+    width: 50%;
+    font-weight: 600;
+    font-size: large;
+    border: 3px solid #b800be;
+}
+.span{
+    color: #f00;
+    font-style: italic;
+    font-weight: 900;
+}
+.create_btn{
+    background: #f00;
+    color: #fff;
+    padding: 15px;
+    font-family: cursive;
+    font-weight: 900;
+    margin: 10px;
+    cursor: pointer;
+    border: 2px solid #fff;
+    transition: 0.5s;
+}
+.create_btn:hover{
+    background: #00ff;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.game_name2{
+    width: 40%;
+    background: linear-gradient(to right, #ffffff50, #ffffff50);
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: fantasy;
+    font-size: x-large;
+    padding: 5px;
+}
+.signup_form{
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    color: #000;
+    display: block;
+}
+.create_account_text{
+    display: flex;
+    justify-content: center;
+}
+.account_text{
+    font-family: system-ui;
+    font-size: x-large;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    background: #aeff00;
+    padding: 5px;
+}
+.form_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.form{
+    background: linear-gradient(rgba(248, 149, 0, 0.5), rgba(255, 234, 0, 0.5));
+    width: 50%;
+    height: 50%;
+}
+.name, .email, .password{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+.name_input, .email_input, .password_input{
+    background: #000;
+    border: 0;
+    outline: none;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-family: system-ui;
+    transition: 0.3s;
+}
+.close_img{
+    cursor: pointer;
+    transition: 0.3s;
+    position: absolute;
+    z-index: 1;
+}
+.close_img:hover{
+    filter: brightness(120%);
+}
+.form_text_container{
+    display: flex;
+    justify-content: center;
+}
+.form_text{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    background: #000;
+    color: #fff;
+    font-family: fantasy;
+    font-size: large;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.form_create{
+    display: flex;
+    justify-content: center;
+    transform: translateY(100%);
+}
+/* .coon{
+    width: 100%;
+    height: 100%;
+}
+.signedup{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#00fc65, #aeff00);
+    font-size: 450%;
+    color: #ff00e1;
+    font-family: monospace;
+    font-weight: 800;
+}
+.signedup_text_container{
+    display: flex;
+    justify-content: center;
+}
+.signedup_button_container{
+    display: flex;
+    justify-content: center;
+}
+.signedup_btn{
+    border: none;
+    background: linear-gradient(#008cff, #0008f8);
+    font-family: fantasy;
+    font-size: 100%;
+    padding: 10px;
+    transform: translateY(50%);
+    cursor: pointer;
+    box-shadow: 8px 8px 8px #0080ff;
+    transition: 0.3s;
+    color: #fff;
+    border-radius: 10px;
+}
+.signedup_btn:hover{
+    filter: brightness(120%);
+} */
